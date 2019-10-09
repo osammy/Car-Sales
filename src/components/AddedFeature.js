@@ -1,10 +1,15 @@
-import React from 'react';
+import React from "react";
 
 const AddedFeature = props => {
   return (
-    <li style={{color:"black"}}>
-      {/* Add an onClick to run a function to remove a feature */}
-      <button className="button">X</button>
+    <li>
+      <button
+        style={{ marginRight: "20px" }}
+        onClick={props.removeFeature}
+        className="delete"
+      >
+      </button>
+      &nbsp;
       {props.feature.name}
     </li>
   );
